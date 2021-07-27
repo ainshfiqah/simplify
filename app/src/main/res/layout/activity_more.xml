@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#372A28"
+    tools:context=".more">
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="213dp"
+        android:layout_height="31dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Profile"
+        android:textColor="#FAFAFA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="290dp"
+        android:layout_height="186dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.473">
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#FAFAFA"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="479dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textUEmail"
+            android:layout_width="302dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="User Email"
+            android:textColor="#FAFAFA"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="539dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#FAFAFA"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="479dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textUName"
+            android:layout_width="302dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="User Name"
+            android:textColor="#FAFAFA"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="539dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textColor="#FAFAFA"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="479dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textUPhone"
+            android:layout_width="302dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="User Phone Number"
+            android:textColor="#FAFAFA"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="539dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:background="@drawable/btn_bg"
+        android:shadowColor="@color/white"
+        android:text="Edit"
+        android:textColor="#372A28"
+        android:textColorHighlight="#0FFFFFFF"
+        android:textSize="14sp"
+        app:backgroundTint="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.734"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:background="@drawable/btn_bg"
+        android:shadowColor="@color/white"
+        android:text="Sign Out"
+        android:textColor="#372A28"
+        android:textColorHighlight="#0FFFFFFF"
+        android:textSize="14sp"
+        app:backgroundTint="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-4dp"
+        android:background="#FFEB3B"
+        app:itemIconTint="#423A30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottomnavigation">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
